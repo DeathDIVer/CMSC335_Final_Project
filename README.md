@@ -1,6 +1,15 @@
-Name: Daniel Qian
-UID: 119860243
+Submitted by: Daniel Qian (119860243)
 
-Group Members:
-1. Atul Iyengar
-2. Eric Taylor
+Group Members: Atul Iyengar (TODO), Eric Taylor (TODO)
+
+App Description: TODO
+
+YouTube Video Link: TODO
+
+APIs: TODO
+
+Contact Email: TODO
+
+Deployed App Link: TODO
+
+AI Use: TODO
