@@ -1,6 +1,6 @@
 Submitted by: Daniel Qian (119860243)
 
-Group Members: Atul Iyengar (TODO), Eric Taylor (TODO)
+Group Members: Atul Iyengar (119540886), Eric Taylor (TODO)
 
 App Description: TODO
 
