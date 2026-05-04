@@ -1,0 +1,11 @@
+{
+  "name": "cmsc335_final_project",
+  "version": "1.0.0",
+  "main": "rename.js",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.1"
+  }
+}
