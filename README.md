@@ -2,14 +2,14 @@ Submitted by: Daniel Qian (119860243)
 
 Group Members: Atul Iyengar (119540886), Eric Taylor (119885611)
 
-App Description: TODO
+App Description: Movie watchlist that allows users to view and save movies along with any notes.
 
 YouTube Video Link: TODO
 
-APIs: TODO
+APIs: OMDb API (https://www.omdbapi.com/)
 
-Contact Email: TODO
+Contact Email: dqian@terpmail.umd.edu
 
-Deployed App Link: TODO
+Deployed App Link: https://moviewatchlist-zzcm.onrender.com
 
-AI Use: TODO
+AI Use: ChatGPT
