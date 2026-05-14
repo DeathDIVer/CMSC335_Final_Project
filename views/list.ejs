@@ -6,6 +6,36 @@
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    
+    <h1>My Watchlist</h1>
+
+    <p><a href="/">Home</a> <a href="/save-to-list">Add Movie</a></p>
+
+    <% if (error) { %>
+      <p><%= error %></p>
+    <% } %>
+
+    <% if (movies.length === 0) { %>
+      <div>
+        <p>No movies saved yet.</p>
+      </div>
+    <% } %>
+
+    <% movies.forEach(movie => { %>
+      <div>
+        <h2><%= movie.title %></h2>
+        <p><%= movie.year %></p>
+        <p><%= movie.genre %></p>
+        <p><%= movie.plot %></p>
+        <p>IMDb Rating: <%= movie.imdbRating %></p>
+
+        <% if (movie.note) { %>
+          <p>Your note: <%= movie.note %></p>
+        <% } %>
+
+        <% if (movie.poster && movie.poster !== "N/A") { %>
+          <img src="<%= movie.poster %>" alt="<%= movie.title %> poster">
+        <% } %>
+      </div>
+    <% }) %>
   </body>
 </html>

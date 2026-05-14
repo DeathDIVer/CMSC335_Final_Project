@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Movie Result</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>Movie Result</h1>
+
+    <% if (error) { %>
+      <p><%= error %></p>
+    <% } %>
+
+    <div>
+      <h2><%= movie.Title %></h2>
+      <p><%= movie.Year %></p>
+      <p><%= movie.Genre %></p>
+      <p><%= movie.Plot %></p>
+      <p>IMDb Rating: <%= movie.imdbRating %></p>
+
+      <% if (movie.Poster && movie.Poster !== "N/A") { %>
+        <img src="<%= movie.Poster %>" alt="<%= movie.Title %> poster">
+      <% } %>
+
+      <form action="/movies" method="POST">
+        <input type="hidden" name="imdbID" value="<%= movie.imdbID %>">
+        <input type="hidden" name="title" value="<%= movie.Title %>">
+        <input type="hidden" name="year" value="<%= movie.Year %>">
+        <input type="hidden" name="genre" value="<%= movie.Genre %>">
+        <input type="hidden" name="director" value="<%= movie.Director %>">
+        <input type="hidden" name="actors" value="<%= movie.Actors %>">
+        <input type="hidden" name="plot" value="<%= movie.Plot %>">
+        <input type="hidden" name="poster" value="<%= movie.Poster %>">
+        <input type="hidden" name="imdbRating" value="<%= movie.imdbRating %>">
+
+        <label for="note">Personal note</label>
+        <textarea id="note" name="note"></textarea>
+
+        <button type="submit">Save to Watchlist</button>
+      </form>
+    </div>
+
+    <p><a href="/save-to-list">Search Again</a> <a href="/list">View Watchlist</a></p>
+  </body>
+</html>

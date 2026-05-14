@@ -6,6 +6,20 @@
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    
+    <h1>Find a Movie</h1>
+
+    <div>
+      <form action="/save-to-list" method="POST">
+        <label for="movieTitle">Movie title</label>
+        <input type="text" id="movieTitle" name="movieTitle" required>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <% if (error) { %>
+      <p><%= error %></p>
+    <% } %>
+
+    <p><a href="/">Back Home</a></p>
   </body>
 </html>
